@@ -7,4 +7,4 @@ FROM gitpod/workspace-full
 # More information: https://www.gitpod.io/docs/config-docker/
 
 RUN sudo apt-get update -y \
-  && sudo DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata \ 
+  && sudo DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
