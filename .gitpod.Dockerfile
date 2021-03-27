@@ -8,3 +8,4 @@ FROM gitpod/workspace-full
 
 RUN sudo apt-get update -y \
   && sudo DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
+  && sudo apt-get install -y sudo cpanm -f Bio::Roary
