@@ -9,6 +9,6 @@ FROM gitpod/workspace-full
 RUN sudo apt-get update -y \
   && sudo DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata \
   && sudo apt-get install -y bedtools cd-hit ncbi-blast+ mcl parallel cpanminus prank mafft fasttree
-  && sudo cpanm -f Bio::Roary
+  && sudo apt-get install roary
   
 CMD ["roary"]
